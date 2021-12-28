@@ -55,7 +55,7 @@ function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplit
 
 function HOME()
 menu = gg.multiChoice({
- "[🇳] Plane Ammo Test",
+ "[🇳] Plane Ammo",
  "[🇨🇳] Damage 0.3m",
  "[🇨🇳] Max RPM",
  "[🇨🇳] Ammo 74B",
