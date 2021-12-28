@@ -74,7 +74,8 @@ menu = gg.multiChoice({
  "[🇨🇳] Wing Special For BF-109",
  "[🇨🇳] Test All Wing",
  "Flap B_109",
- "All RPM TEST"
+ "All RPM TEST",
+ "One Click For Mod",
 },nil, "• Develop : Owlin \n☕Project Owl Everyday☕ \n  BY ME AND FOR YOU")
 if menu == nil then else
 if menu[1] == true then Bypass()end
@@ -98,6 +99,7 @@ if menu[17] == true then wingbf109()end
 if menu[18] == true then allwing()end
 if menu[19] == true then flapbf()end
 if menu[20] == true then allrpm()end
+if menu[21] == true then Bypass1() allwing() allrpm()end
 end
 PUBGM= -1
 end
