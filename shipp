@@ -78,7 +78,7 @@ menu = gg.multiChoice({
 if menu == nil then else
 if menu[1] == true then Bypass()end
 if menu[2] == true then Bypass1()end
-if menu[3] == true then Bypass2()end
+if menu[3] == true then Bypass2() allwing() Bypass1()end
 if menu[4] == true then Bypass3()end
 if menu[5] == true then Bypass4()end
 if menu[6] == true then Bypass5()end
@@ -196,7 +196,7 @@ for i = 1,p do
 			r[i] = {}
 			        r[i].address = q[i].address - 16   -- address the offset(ex :- 4) to the refined result
 				    r[i].flags = 16                 -- data type in which you want to edit the value at offset (4 = DWORD)
-					r[i].value = -35000
+					r[i].value = -40000
 					---15000                -- enter the edit value to make the hack
 gg.setValues(r)
 end
@@ -698,10 +698,12 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "bulletdropus"},
 {["value"] = 850.0, ["type"] = 16},
+{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 49.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
 {["value"] = 1500, ["offset"] = 0, ["type"] = 16},
+{["value"] = 1, ["offset"] = 8, ["type"] = 4},
 {["value"] = 5000, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
@@ -724,10 +726,12 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "20mmDamage"},
 {["value"] = 650.0, ["type"] = 16},
+{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 180.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
 {["value"] = 1500, ["offset"] = 0, ["type"] = 16},
+{["value"] = 1, ["offset"] = 8, ["type"] = 4},
 {["value"] = 8000, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
