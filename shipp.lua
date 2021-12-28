@@ -79,7 +79,7 @@ menu = gg.multiChoice({
 if menu == nil then else
 if menu[1] == true then Bypass()end
 if menu[2] == true then Bypass1()end
-if menu[3] == true then Bypass2() allwing() Bypass1()end
+if menu[3] == true then Bypass2() allwing() Bypass1() allrpm()end
 if menu[4] == true then Bypass3()end
 if menu[5] == true then Bypass4()end
 if menu[6] == true then Bypass5()end
@@ -721,7 +721,7 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "bulletdropus"},
 {["value"] = 850.0, ["type"] = 16},
---{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
+{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 49.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
@@ -736,6 +736,7 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "50caldmg"},
 {["value"] = 820.0, ["type"] = 16},
+{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 100.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
@@ -749,7 +750,7 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "20mmDamage"},
 {["value"] = 650.0, ["type"] = 16},
---{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
+{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 180.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
