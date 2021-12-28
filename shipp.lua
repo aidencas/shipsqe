@@ -52,10 +52,10 @@ function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplit
 ---m = gg.alert("Done")
 ---gg.prompt ("C = The value is '.m.'")
 ---a = gg.prompt({'Edit your own RPM (Default 10000) \nDont Try More Than 12000 Speed Limiter Will Kill You : [5000; 15000]'}, {10000}, {'number'})
-123
+
 function HOME()
 menu = gg.multiChoice({
- "[🇳] Plane Ammo",
+ "[🇳] Plane Ammo Test",
  "[🇨🇳] Damage 0.3m",
  "[🇨🇳] Max RPM",
  "[🇨🇳] Ammo 74B",
