@@ -721,9 +721,9 @@ function Bypass1()
 gg.clearResults()
 qmnb = {
 {["memory"] = 32},
-{["name"] = "bulletdropus"},
+{["name"] = "13mmdmg"},
 {["value"] = 850.0, ["type"] = 16},
-{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
+--{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 49.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
@@ -738,7 +738,7 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "50caldmg"},
 {["value"] = 820.0, ["type"] = 16},
-{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
+--{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 100.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
@@ -752,7 +752,7 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "20mmDamage"},
 {["value"] = 650.0, ["type"] = 16},
-{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
+--{["lv"] = 1, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 180.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
