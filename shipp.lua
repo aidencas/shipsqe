@@ -73,7 +73,8 @@ menu = gg.multiChoice({
  "[🇨🇳] Wing Special For BF-102",
  "[🇨🇳] Wing Special For BF-109",
  "[🇨🇳] Test All Wing",
- "Flap B_109"
+ "Flap B_109",
+ "All RPM TEST"
 },nil, "• Develop : Owlin \n☕Project Owl Everyday☕ \n  BY ME AND FOR YOU")
 if menu == nil then else
 if menu[1] == true then Bypass()end
@@ -96,6 +97,7 @@ if menu[16] == true then winggrmbf109()end
 if menu[17] == true then wingbf109()end
 if menu[18] == true then allwing()end
 if menu[19] == true then flapbf()end
+if menu[20] == true then allrpm()end
 end
 PUBGM= -1
 end
@@ -156,6 +158,27 @@ xqmnb(qmnb)
 
 end
 
+function allrpm()
+gg.clearResults()
+gg.searchNumber("999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.setVisible(false)
+gg.sleep(3000)
+gg.refineNumber("999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+p = gg.getResultCount()                -- saving the results count
+q = gg.getResults(p)                   -- saving the results
+
+-- using loop to edit the values at offset one by one
+
+for i = 1,p do
+          local  r = {}
+			r[i] = {}
+			        r[i].address = q[i].address + 16   -- address the offset(ex :- 4) to the refined result
+				    r[i].flags = 4                 -- data type in which you want to edit the value at offset (4 = DWORD)
+					r[i].value = 0
+					---15000                -- enter the edit value to make the hack
+gg.setValues(r)
+end
+end
 
 function allwing()
 
@@ -698,12 +721,12 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "bulletdropus"},
 {["value"] = 850.0, ["type"] = 16},
-{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
+--{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 49.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
 {["value"] = 1500, ["offset"] = 0, ["type"] = 16},
-{["value"] = 1, ["offset"] = 8, ["type"] = 4},
+--{["value"] = 1, ["offset"] = 8, ["type"] = 4},
 {["value"] = 5000, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
@@ -726,12 +749,12 @@ qmnb = {
 {["memory"] = 32},
 {["name"] = "20mmDamage"},
 {["value"] = 650.0, ["type"] = 16},
-{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
+--{["lv"] = 0, ["offset"] = 8, ["type"] = 4},
 {["lv"] = 180.0, ["offset"] = 12, ["type"] = 16},
 }
 qmxg = {
 {["value"] = 1500, ["offset"] = 0, ["type"] = 16},
-{["value"] = 1, ["offset"] = 8, ["type"] = 4},
+--{["value"] = 1, ["offset"] = 8, ["type"] = 4},
 {["value"] = 8000, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
