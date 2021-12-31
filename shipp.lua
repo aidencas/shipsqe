@@ -732,7 +732,7 @@ qmxg = {
 {["value"] = 5000, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
-
+--[[
 gg.clearResults()
 qmnb = {
 {["memory"] = 32},
@@ -746,7 +746,7 @@ qmxg = {
 {["value"] = 6000, ["offset"] = 12, ["type"] = 16},
 }
 xqmnb(qmnb)
-
+--]]
 gg.clearResults()
 qmnb = {
 {["memory"] = 32},
